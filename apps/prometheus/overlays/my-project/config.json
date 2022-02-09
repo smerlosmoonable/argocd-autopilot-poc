@@ -1,10 +1,1 @@
-{
-  "appName": "prometheus",
-  "userGivenName": "prometheus",
-  "destNamespace": "monitoring",
-  "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/prometheus/overlays/my-project",
-  "srcRepoURL": "https://github.com/smerlosmoonable/argocd-autopilot-poc.git",
-  "srcTargetRevision": "",
-  "labels": null
-}
+{"appName":"prometheus","userGivenName":"prometheus","destNamespace":"monitoring","destServer":"https://kubernetes.default.svc","srcPath":"apps/prometheus/overlays/my-project","srcRepoURL":"https://github.com/smerlosmoonable/argocd-autopilot-poc.git","srcTargetRevision":"","labels":null}
