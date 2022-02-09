@@ -1,0 +1,10 @@
+{
+  "appName": "prometheus-crd",
+  "userGivenName": "prometheus-crd",
+  "destNamespace": "monitoring",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/prometheus-crd/overlays/my-project",
+  "srcRepoURL": "https://github.com/smerlosmoonable/argocd-autopilot-poc.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
