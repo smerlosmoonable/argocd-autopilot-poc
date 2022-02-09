@@ -3,8 +3,8 @@ kind: Kustomization
 namespace: argocd
 resources:
 resources:
-  - https://raw.githubusercontent.com/argoproj/argo-cd/v2.1.1/manifests/install.yaml
-  - https://raw.githubusercontent.com/argoproj-labs/applicationset/v0.2.0/manifests/install.yaml
+  - https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/ha/install.yaml
+  - https://raw.githubusercontent.com/argoproj/applicationset/master/manifests/install.yaml
 configMapGenerator:
   - name: argocd-cm
     behavior: merge
