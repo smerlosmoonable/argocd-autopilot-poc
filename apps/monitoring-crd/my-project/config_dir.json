@@ -1,0 +1,1 @@
+{"appName":"monitoring-crd","userGivenName":"monitoring-crd","destNamespace":"default","destServer":"https://kubernetes.default.svc","srcPath":"example/prometheus-operator-crd","srcRepoURL":"https://github.com/prometheus-operator/prometheus-operator.git","srcTargetRevision":"v0.53.1","labels":null,"exclude":"","include":""}
