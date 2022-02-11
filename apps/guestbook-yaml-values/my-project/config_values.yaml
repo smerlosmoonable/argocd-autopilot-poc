@@ -1,15 +1,15 @@
 appName: guestbook-helm-values
-userGivenName: guestbook-helm-values
 destNamespace: default
-destServer: https://kubernetes.default.svc
+destServer: "https://kubernetes.default.svc"
+exclude: ""
+include: ""
+labels: ~
+repoURL: "https://github.com/argoproj/argocd-example-apps.git"
 srcPath: helm-guestbook
-repoURL: https://github.com/argoproj/argocd-example-apps.git
-srcRepoURL: https://github.com/argoproj/argocd-example-apps.git
+srcRepoURL: "https://github.com/argoproj/argocd-example-apps.git"
 srcTargetRevision: master
-labels:
-exclude: ''
-include: ''
-helm:
+userGivenName: guestbook-helm-values
+helm: 
   values: |-
-  ingress: true
-  algo: true
+      algo: 1
+      algo: 2
