@@ -100,6 +100,7 @@ spec:
           destination: {}
           project: ""
           source:
+            targetRevision: '{{ srcTargetRevision }}'
             chart: '{{ helm.chart }}'
             helm:
               values: |-
