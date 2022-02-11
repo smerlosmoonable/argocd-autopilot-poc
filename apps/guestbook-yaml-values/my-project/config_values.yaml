@@ -1,4 +1,4 @@
-appName: guestbook-helm
+appName: guestbook-helm-values
 userGivenName: guestbook-helm-values
 destNamespace: default
 destServer: https://kubernetes.default.svc
