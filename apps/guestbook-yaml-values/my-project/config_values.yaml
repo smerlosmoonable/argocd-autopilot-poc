@@ -11,5 +11,5 @@ exclude: ''
 include: ''
 helm:
   values: |-
-    ingress: true
-    algo: true
+  ingress: true
+  algo: true
