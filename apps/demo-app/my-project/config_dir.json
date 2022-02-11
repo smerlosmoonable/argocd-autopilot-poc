@@ -3,10 +3,13 @@
   "userGivenName": "demo-app",
   "destNamespace": "default",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "examples/helloWorld/",
-  "srcRepoURL": "https://github.com/kubernetes-sigs/kustomize.git",
+  "srcPath": "examples/demo-app/",
+  "srcRepoURL": "https://github.com/argoproj-labs/argocd-autopilot.git",
   "srcTargetRevision": "master",
   "labels": null,
   "exclude": "",
-  "include": ""
+  "include": "",
+  "helm": {
+    "test": true
+  }
 }
