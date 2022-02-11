@@ -4,9 +4,9 @@ destServer: "https://kubernetes.default.svc"
 exclude: ""
 include: ""
 labels:
-repoURL: "https://kubernetes.github.io/ingress-nginx.git"
+repoURL: "https://kubernetes.github.io/ingress-nginx/"
 srcPath: ""
-srcRepoURL: "https://kubernetes.github.io/ingress-nginx.git"
+srcRepoURL: "https://kubernetes.github.io/ingress-nginx/"
 srcTargetRevision: "4.0.17"
 userGivenName: ingress-nginx
 helm:
