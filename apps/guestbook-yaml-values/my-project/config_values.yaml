@@ -1,15 +1,41 @@
-appName: guestbook-helm-values
-destNamespace: default
+appName: ingress-nginx
+destNamespace: ingress-nginx
 destServer: "https://kubernetes.default.svc"
 exclude: ""
 include: ""
-labels: ~
-repoURL: "https://github.com/argoproj/argocd-example-apps.git"
-srcPath: helm-guestbook
-srcRepoURL: "https://github.com/argoproj/argocd-example-apps.git"
+labels:
+repoURL: "https://kubernetes.github.io/ingress-nginx.git"
+srcPath: ""
+srcRepoURL: "https://kubernetes.github.io/ingress-nginx.git"
 srcTargetRevision: master
-userGivenName: guestbook-helm-values
-helm: 
+userGivenName: ingress-nginx
+helm:
+  chart: ingress-nginx
   values: |-
-      cosas: 1
-      estrafalarias: 2
+      controller:
+        replicaCount: 2
+        resources:
+          requests:
+            cpu: 100m
+            memory: 90Mi
+      service:
+        type: LoadBalancer
+        annotations:
+          service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "true"
+          service.beta.kubernetes.io/do-loadbalancer-tls-passthrough: "true"
+      config:
+        use-proxy-protocol: "true"
+        keep-alive-requests: "10000"
+        upstream-keepalive-requests: "1000"
+        worker-processes: "auto"
+        max-worker-connections: "65535"
+        use-gzip: "true"
+      metrics:
+        enabled: true
+      podAnnotations:
+        controller:
+          metrics:
+            service:
+              servicePort: "9090"
+        prometheus.io/port: "10254"
+        prometheus.io/scrape: "true"
