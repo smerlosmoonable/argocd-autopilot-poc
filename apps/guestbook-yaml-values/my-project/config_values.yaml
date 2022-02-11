@@ -11,5 +11,5 @@ srcTargetRevision: master
 userGivenName: guestbook-helm-values
 helm: 
   values: |-
-      algo: 1
-      algo: 2
+      cosas: 1
+      estrafalarias: 2
