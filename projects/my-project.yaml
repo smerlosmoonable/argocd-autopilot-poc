@@ -71,7 +71,7 @@ spec:
       labels:
         app.kubernetes.io/managed-by: argocd-autopilot
         app.kubernetes.io/name: '{{ appName }}'
-      name: my-project-{{ userGivenName }}
+      name: my-project-{{ userGivenName }}-{{- if helm.enabled -}}helm{{ - end}}
       namespace: argocd
     spec:
       destination:
