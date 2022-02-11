@@ -1,0 +1,1 @@
+{"appName":"demo-app","userGivenName":"demo-app","destNamespace":"default","destServer":"https://kubernetes.default.svc","srcPath":"example/helloWorld","srcRepoURL":"https://github.com/kubernetes-sigs/kustomize.git","srcTargetRevision":"master","labels":null,"exclude":"","include":""}
