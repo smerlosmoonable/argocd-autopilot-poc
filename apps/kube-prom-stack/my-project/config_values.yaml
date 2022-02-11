@@ -1,0 +1,32 @@
+appName:  kube-prom-stack
+destNamespace: monitoring
+destServer: "https://kubernetes.default.svc"
+exclude: ""
+include: ""
+labels:
+repoURL: "https://prometheus-community.github.io/helm-charts"
+srcPath: ""
+srcRepoURL: "https://prometheus-community.github.io/helm-charts"
+srcTargetRevision: "30.0.1"
+userGivenName: kube-prom-stack
+helm:
+  chart: kube-prometheus-stack
+  values: |-
+      defaultRules:
+        create: true
+        rules:
+          etcd: false
+          kubeScheduler: false
+      kubeScheduler:
+        enabled: false
+      kubeEtcd:
+        enabled: false
+      alertmanager:
+        enabled: true
+      grafana:
+        enabled: true
+        adminPassword: prom-operator
+      prometheusOperator:
+        enabled: true
+      prometheus:
+        enabled: true
