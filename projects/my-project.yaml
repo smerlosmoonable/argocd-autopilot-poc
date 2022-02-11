@@ -81,7 +81,7 @@ spec:
           project: ""
           source:
             helm:
-              valuesFile:
+              valueFiles:
                 - v{{helm.valueFiles}}.yaml
   syncPolicy: {}
   template:
