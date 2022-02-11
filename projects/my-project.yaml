@@ -80,6 +80,7 @@ spec:
           destination: {}
           project: ""
           source:
+            repoURL: {{ srcRepoURL }}
             helm:
               valueFiles:
                 - v{{helm.valueFiles}}.yaml
