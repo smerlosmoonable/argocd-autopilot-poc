@@ -47,7 +47,6 @@ spec:
           destination: {}
           project: ""
           source:
-            targetRevision: '{{ srcTargetRevision }}'
             repoURL: ""
   - git:
       files:
@@ -62,7 +61,6 @@ spec:
           destination: {}
           project: ""
           source:
-            targetRevision: '{{ srcTargetRevision }}'
             directory:
               exclude: '{{ exclude }}'
               include: '{{ include }}'
@@ -82,7 +80,6 @@ spec:
           destination: {}
           project: ""
           source:
-            targetRevision: '{{ srcTargetRevision }}'
             helm:
               valueFiles:
                 - '{{helm.valueFiles}}.yaml'
@@ -100,7 +97,6 @@ spec:
           destination: {}
           project: ""
           source:
-            targetRevision: '{{ srcTargetRevision }}'
             chart: '{{ helm.chart }}'
             helm:
               values: |-
@@ -124,6 +120,7 @@ spec:
         kind: Application
       project: my-project
       source:
+        targetRevision: '{{ srcTargetRevision }}'
         path: '{{ srcPath }}'
         repoURL: '{{ srcRepoURL }}'
       syncPolicy:
