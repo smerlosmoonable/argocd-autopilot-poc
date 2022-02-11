@@ -10,4 +10,4 @@ labels:
 exclude: ''
 include: ''
 helm:
-  valueFiles: alues
+  valueFiles: values
