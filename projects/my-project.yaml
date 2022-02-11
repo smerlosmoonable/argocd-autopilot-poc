@@ -82,7 +82,7 @@ spec:
           source:
             helm:
               valuesFile:
-                - {{ helm.valueFiles }}
+                - - v{{helm.valueFiles}}.yaml
   syncPolicy: {}
   template:
     metadata:
