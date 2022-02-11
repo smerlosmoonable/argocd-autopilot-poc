@@ -1,1 +1,0 @@
-{"appName":"ingress-nginx","userGivenName":"ingress-nginx","destNamespace":"default","destServer":"https://kubernetes.default.svc","srcPath":"apps/ingress-nginx/overlays/my-project","srcRepoURL":"https://github.com/smerlosmoonable/argocd-autopilot-poc.git","srcTargetRevision":"","labels":null}
