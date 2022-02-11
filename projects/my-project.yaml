@@ -97,10 +97,10 @@ spec:
           destination: {}
           project: ""
           source:
-          helm: 
-            values: |-
-                algo: 1
-                algo: 2
+            helm: 
+              values: |-
+                  algo: 1
+                  algo: 2
             repoURL: ""
   syncPolicy: {}
   template:
