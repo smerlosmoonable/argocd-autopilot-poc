@@ -1,0 +1,13 @@
+appName: guestbook-yaml
+userGivenName: guestbook-yaml
+destNamespace: default
+destServer: https://kubernetes.default.svc
+srcPath: guestbook
+srcRepoURL: https://github.com/argoproj/argocd-example-apps.git
+srcTargetRevision: master
+labels:
+exclude: ''
+include: ''
+helm:
+  enabled: true
+  userGivenName: estrafalario

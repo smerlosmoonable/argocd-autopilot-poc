@@ -67,6 +67,25 @@ spec:
               jsonnet: {}
               recurse: true
             repoURL: ""
+  - git:
+      files:
+      - path: apps/**/my-project/config.yaml
+      repoURL: https://github.com/smerlosmoonable/argocd-autopilot-poc.git
+      requeueAfterSeconds: 20
+      revision: ""
+      template:
+        metadata: 
+          name: my-project-{{userGivenName}}
+        spec:
+          destination: {}
+          project: ""
+          source:
+            directory:
+              exclude: '{{ exclude }}'
+              include: '{{ include }}'
+              jsonnet: {}
+              recurse: true
+            repoURL: ""
   syncPolicy: {}
   template:
     metadata:
