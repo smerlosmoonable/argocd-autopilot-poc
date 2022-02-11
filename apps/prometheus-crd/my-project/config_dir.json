@@ -1,0 +1,1 @@
+{"appName":"prometheus-crd","userGivenName":"prometheus-crd","destNamespace":"default","destServer":"https://kubernetes.default.svc","srcPath":"example/prometheus-operator-crd","srcRepoURL":"https://github.com/prometheus-operator/prometheus-operator.git","srcTargetRevision":"","labels":null,"exclude":"","include":""}
