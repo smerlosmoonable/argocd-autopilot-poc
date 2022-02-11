@@ -41,7 +41,8 @@ spec:
       requeueAfterSeconds: 20
       revision: ""
       template:
-        metadata: {}
+        metadata: 
+          name: my-project-{{userGivenName}}
         spec:
           destination: {}
           project: ""
@@ -54,7 +55,8 @@ spec:
       requeueAfterSeconds: 20
       revision: ""
       template:
-        metadata: {}
+        metadata: 
+          name: my-project-{{userGivenName}}
         spec:
           destination: {}
           project: ""
@@ -71,7 +73,6 @@ spec:
       labels:
         app.kubernetes.io/managed-by: argocd-autopilot
         app.kubernetes.io/name: '{{ appName }}'
-      name: my-project-{{userGivenName}}
       namespace: argocd
     spec:
       destination:
