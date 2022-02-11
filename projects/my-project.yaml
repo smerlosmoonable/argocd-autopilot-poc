@@ -56,9 +56,7 @@ spec:
       revision: ""
       template:
         metadata: 
-          {{- if helm.enabled }}
-          name: my-project-{{helm.userGivenName}}
-          {{ - end }}
+          name: my-project-{{userGivenName}}
         spec:
           destination: {}
           project: ""
