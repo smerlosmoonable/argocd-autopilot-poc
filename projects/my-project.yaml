@@ -69,7 +69,7 @@ spec:
             repoURL: ""
   - git:
       files:
-      - path: apps/**/my-project/config.yaml
+        - path: apps/**/my-project/config.yaml
       repoURL: https://github.com/smerlosmoonable/argocd-autopilot-poc.git
       requeueAfterSeconds: 20
       revision: ""
