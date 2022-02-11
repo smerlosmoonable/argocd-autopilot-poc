@@ -84,6 +84,22 @@ spec:
               valueFiles:
                 - v{{helm.valueFiles}}.yaml
             repoURL: ""
+  - git:
+      files:
+        - path: apps/**/my-project/config_values.yaml
+      repoURL: https://github.com/smerlosmoonable/argocd-autopilot-poc.git
+      requeueAfterSeconds: 20
+      revision: ""
+      template:
+        metadata: 
+          name: my-project-{{userGivenName}}
+        spec:
+          destination: {}
+          project: ""
+          source:
+            helm:
+              values: {{helm.values}}
+            repoURL: ""
   syncPolicy: {}
   template:
     metadata:
