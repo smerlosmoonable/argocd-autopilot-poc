@@ -667,15 +667,15 @@ helm:
         ingress:
           ## If true, Grafana Ingress will be created
           ##
-          enabled: true
+          enabled: flase
 
           ## Annotations for Grafana Ingress
           ##
-          annotations:
-            kubernetes.io/ingress.class: nginx
-            kubernetes.io/tls-acme: "true"
-            cert-manager.io/cluster-issuer: letsencrypt-prod-cloudflare
-            external-dns.alpha.kubernetes.io/hostname: grafana-dashboard.mercurydev.tk
+          annotations: {}
+          ##   kubernetes.io/ingress.class: nginx
+          ##   kubernetes.io/tls-acme: "true"
+          ##   cert-manager.io/cluster-issuer: letsencrypt-prod-cloudflare
+          ##   external-dns.alpha.kubernetes.io/hostname: grafana-dashboard.mercurydev.tk
 
           ## Labels to be added to the Ingress
           ##
@@ -686,18 +686,18 @@ helm:
           ##
           # hosts:
           #   - grafana.domain.com
-          hosts:
-            - grafana-dashboard.mercurydev.tk
+          hosts: []
+          ##   - grafana-dashboard.mercurydev.tk
           ## Path for grafana ingress
           path: /
 
           ## TLS configuration for grafana Ingress
           ## Secret must be manually created in the namespace
           ##
-          tls:
-          - secretName: grafana-general-tls
-            hosts:
-            - grafana-dashboard.mercurydev.tk
+          tls: []
+          ## - secretName: grafana-general-tls
+          ##   hosts:
+          ##   - grafana-dashboard.mercurydev.tk
 
         sidecar:
           dashboards:
