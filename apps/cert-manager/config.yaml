@@ -1,0 +1,14 @@
+appName: cert-manager
+userGivenName: cert-manager
+destNamespace: cert-manager
+destServer: https://kubernetes.default.svc
+srcPath: ''
+repoURL: https://charts.bitnami.com/bitnami
+srcRepoURL: https://charts.bitnami.com/bitnami
+srcTargetRevision: '0.4.5'
+labels:
+exclude: ''
+include: ''
+helm:
+  chart: cert-manager
+  valueFiles: values
