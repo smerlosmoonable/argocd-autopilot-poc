@@ -80,8 +80,8 @@ spec:
           destination: {}
           project: ""
           source:
+            chart: '{{ helm.chart }}'
             helm:
-              chart: '{{ helm.chart }}'
               valueFiles:
                 - '{{helm.valueFiles}}.yaml'
             repoURL: ""
