@@ -1,6 +1,6 @@
 appName: sealed-secrets
 userGivenName: sealed-secrets
-destNamespace: sealed-secrets
+destNamespace: kube-system
 destServer: https://kubernetes.default.svc
 srcPath: ''
 repoURL: https://bitnami-labs.github.io/sealed-secrets
