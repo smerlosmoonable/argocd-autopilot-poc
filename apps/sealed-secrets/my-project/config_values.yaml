@@ -1,0 +1,16 @@
+appName: sealed-secrets
+userGivenName: sealed-secrets
+destNamespace: sealed-secrets
+destServer: https://kubernetes.default.svc
+srcPath: ''
+repoURL: https://bitnami-labs.github.io/sealed-secrets
+srcRepoURL: https://bitnami-labs.github.io/sealed-secrets
+srcTargetRevision: '2.0.2'
+labels:
+exclude: ''
+include: ''
+helm:
+  chart: sealed-secrets
+  values: |-
+      ingress:
+        enabled: false
