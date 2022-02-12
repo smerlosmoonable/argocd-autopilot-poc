@@ -16,3 +16,4 @@ helm:
         secretName: external-dns-secret
         email: santiago@mercury.cash
         proxied: true
+      provider: cloudflare
