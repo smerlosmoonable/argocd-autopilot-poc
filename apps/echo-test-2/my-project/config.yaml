@@ -11,3 +11,4 @@ exclude: ''
 include: ''
 helm:
   valueFiles: values-prod
+  chart: ''
