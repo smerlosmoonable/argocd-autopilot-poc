@@ -27,7 +27,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: dashboard.example.com
+    - host: linkerd-viz.mercurydev.tk
       http:
         paths:
           - path: /
