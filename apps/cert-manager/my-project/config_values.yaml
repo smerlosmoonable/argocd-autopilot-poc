@@ -11,4 +11,5 @@ exclude: ''
 include: ''
 helm:
   chart: cert-manager
-  valueFiles: values
+  values: |-
+      installCRDs: true
