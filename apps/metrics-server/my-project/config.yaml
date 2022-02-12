@@ -1,0 +1,14 @@
+appName: metrics-server
+userGivenName: metrics-server
+destNamespace: metrics-server
+destServer: https://kubernetes.default.svc
+srcPath: ''
+repoURL: https://charts.bitnami.com/bitnami
+srcRepoURL: https://charts.bitnami.com/bitnami
+srcTargetRevision: '5.11.1'
+labels:
+exclude: ''
+include: ''
+helm:
+  cahrt: metrics-server
+  valueFiles: values
