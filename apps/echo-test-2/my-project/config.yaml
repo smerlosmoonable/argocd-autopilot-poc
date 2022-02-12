@@ -1,6 +1,6 @@
 appName: echo-test-2
 userGivenName: echo-test-2
-destNamespace: default
+destNamespace: smerlos
 destServer: https://kubernetes.default.svc
 srcPath: internals/cicd/helm/echo-test-2
 repoURL: 'git@bitbucket.org:mercury_cash/echo-test-2.git'
