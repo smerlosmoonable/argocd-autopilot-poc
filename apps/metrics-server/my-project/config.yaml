@@ -10,5 +10,5 @@ labels:
 exclude: ''
 include: ''
 helm:
-  cahrt: metrics-server
+  chart: metrics-server
   valueFiles: values
