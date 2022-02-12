@@ -10,5 +10,5 @@ labels:
 exclude: ''
 include: ''
 helm:
-  valueFiles: values-prod
+  valueFiles: values-new
   chart: ''
