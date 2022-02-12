@@ -1,14 +1,14 @@
-appName: metrics-server
-userGivenName: metrics-server
-destNamespace: metrics-server
+appName: cert-manager
+userGivenName: cert-manager
+destNamespace: cert-manager
 destServer: https://kubernetes.default.svc
 srcPath: ''
-repoURL: https://kubernetes-sigs.github.io/metrics-server/
-srcRepoURL: https://kubernetes-sigs.github.io/metrics-server/
-srcTargetRevision: '3.8.1'
+repoURL: https://charts.bitnami.com/bitnami
+srcRepoURL: https://charts.bitnami.com/bitnami
+srcTargetRevision: '0.4.5'
 labels:
 exclude: ''
 include: ''
 helm:
-  chart: metrics-server
+  chart: cert-manager
   valueFiles: values
