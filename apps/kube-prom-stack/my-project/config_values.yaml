@@ -705,7 +705,7 @@ helm:
             ## Annotations for Grafana dashboard configmaps
             ##
             annotations: {}
-            multicluster: false
+            multicluster: true
           datasources:
             enabled: true
             defaultDatasourceEnabled: true
