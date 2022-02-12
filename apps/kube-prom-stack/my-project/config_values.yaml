@@ -2452,15 +2452,15 @@ helm:
         #    verbs: [ "get", "list", "watch" ]
 
         additionalServiceMonitors:
-        - name: "ambassador-monitor"
+        - name: "ingress-nginx-monitor"
           selector:
             matchLabels:
-              service: "ambassador-admin"
+              service: "ingress-nginx-controller"
           namespaceSelector:
             matchNames:
-              - ambassador
+              - ingress-nginx
           endpoints:
-          - port: "ambassador-admin"
+          - port: "ingress-nginx-controller-me"
             path: /metrics
             scheme: http
 
