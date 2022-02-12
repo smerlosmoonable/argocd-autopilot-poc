@@ -2455,7 +2455,9 @@ helm:
         - name: "ingress-nginx-monitor"
           selector:
             matchLabels:
-              service: "ingress-nginx-controller"
+              app.kubernetes.io/component: controller
+              app.kubernetes.io/instance: my-project-ingress-nginx
+              app.kubernetes.io/name: ingress-nginx
           namespaceSelector:
             matchNames:
               - ingress-nginx
