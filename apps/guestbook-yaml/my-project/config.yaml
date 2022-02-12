@@ -1,13 +1,13 @@
-appName: echo-test-2
-userGivenName: echo-test-2
+appName: guestbook-helm
+userGivenName: guestbook-helm
 destNamespace: default
 destServer: https://kubernetes.default.svc
-srcPath: internals/cicd/helm/echo-test-2/
-repoURL: git@bitbucket.org:mercury_cash/echo-test-2.git
-srcRepoURL: git@bitbucket.org:mercury_cash/echo-test-2.git
+srcPath: helm-guestbook
+repoURL: https://github.com/argoproj/argocd-example-apps.git
+srcRepoURL: https://github.com/argoproj/argocd-example-apps.git
 srcTargetRevision: master
 labels:
 exclude: ''
 include: ''
 helm:
-  valueFiles: values-prod
+  valueFiles: values
