@@ -17,7 +17,7 @@ configMapGenerator:
             key: git_username
             name: autopilot-secret
       - |
-        repository.credentials=- sshPrivateKeySecret:
+        repository.credentials2=- sshPrivateKeySecret:
             key: sshPrivateKey
             name: bitbucket-secrets
           url: git@bitbucket.org:mercury_cash
