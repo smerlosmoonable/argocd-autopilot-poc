@@ -81,6 +81,7 @@ spec:
           project: ""
           source:
             helm:
+              chart: '{{ helm.chart }}'
               valueFiles:
                 - '{{helm.valueFiles}}.yaml'
             repoURL: ""
