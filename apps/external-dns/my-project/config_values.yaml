@@ -1,16 +1,16 @@
-appName: extermal-dns
-userGivenName: extermal-dns
-destNamespace: extermal-dns
+appName: external-dns
+userGivenName: external-dns
+destNamespace: external-dns
 destServer: https://kubernetes.default.svc
 srcPath: ''
 repoURL: https://charts.bitnami.com/bitnami
 srcRepoURL: https://charts.bitnami.com/bitnami
-srcTargetRevision: '6.x.x'
+srcTargetRevision: '6.1.5'
 labels:
 exclude: ''
 include: ''
 helm:
-  chart: extermal-dns
+  chart: external-dns
   values: |-
       cloudflare:
         secretName: external-dns-secret
