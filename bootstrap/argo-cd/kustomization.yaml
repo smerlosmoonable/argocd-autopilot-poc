@@ -16,6 +16,12 @@ configMapGenerator:
           usernameSecret:
             key: git_username
             name: autopilot-secret
+      - |
+        repository.credentials=- sshPrivateKeySecret:
+            key: sshPrivateKey
+            name: bitbucket-secrets
+          url: git@bitbucket.org:mercury_cash
+          type:git
 patches:
   # reset the crbs to `subject.namespace: default`, so that argo-cd will later change them to the actual ns
   - target:
