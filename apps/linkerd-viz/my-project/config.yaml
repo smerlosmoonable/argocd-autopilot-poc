@@ -11,4 +11,4 @@ targetRevision: "2.11.1"
 userGivenName: linkerd-viz
 helm:
   chart: linkerd-viz
-  valueFiles: values
+  valueFiles: values-ha
