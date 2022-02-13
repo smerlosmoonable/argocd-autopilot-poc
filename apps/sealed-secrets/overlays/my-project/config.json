@@ -5,6 +5,6 @@
   "destServer": "https://kubernetes.default.svc",
   "srcPath": "apps/sealed-secrets/overlays/my-project",
   "srcRepoURL": "https://github.com/smerlosmoonable/argocd-autopilot-poc.git",
-  "srcTargetRevision": "",
+  "srcTargetRevision": "master",
   "labels": null
 }
