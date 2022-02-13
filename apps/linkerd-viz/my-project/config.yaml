@@ -1,0 +1,14 @@
+appName:  linkerd-viz
+destNamespace: linkerd-viz
+destServer: "https://kubernetes.default.svc"
+exclude: ""
+include: ""
+labels:
+repoURL: "https://helm.linkerd.io/stable"
+srcPath: ""
+srcRepoURL: "https://helm.linkerd.io/stable"
+targetRevision: "2.11.1"
+userGivenName: linkerd-viz
+helm:
+  chart: linkerd-viz
+  valueFiles: values
