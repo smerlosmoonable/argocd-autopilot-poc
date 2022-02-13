@@ -1,0 +1,14 @@
+appName: echo-test-3
+userGivenName: echo-test-3
+destNamespace: smerlos
+destServer: https://kubernetes.default.svc
+srcPath: internals/cicd/helm/echo-test-3
+repoURL: 'git@bitbucket.org:mercury_cash/echo-test-3.git'
+srcRepoURL: 'git@bitbucket.org:mercury_cash/echo-test-3.git'
+targetRevision: master
+labels:
+exclude: ''
+include: ''
+helm:
+  valueFiles: values-new
+  chart: ''
