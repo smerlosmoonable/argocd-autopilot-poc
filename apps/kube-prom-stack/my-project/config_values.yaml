@@ -7,7 +7,7 @@ labels:
 repoURL: "https://prometheus-community.github.io/helm-charts"
 srcPath: ""
 srcRepoURL: "https://prometheus-community.github.io/helm-charts"
-srcTargetRevision: "30.0.1"
+targetRevision: "30.0.1"
 userGivenName: kube-prom-stack
 helm:
   chart: kube-prometheus-stack

@@ -5,7 +5,7 @@ destServer: https://kubernetes.default.svc
 srcPath: helm-guestbook
 repoURL: https://github.com/argoproj/argocd-example-apps.git
 srcRepoURL: https://github.com/argoproj/argocd-example-apps.git
-srcTargetRevision: master
+targetRevision: master
 labels:
 exclude: ''
 include: ''

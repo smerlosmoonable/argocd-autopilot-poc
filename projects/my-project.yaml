@@ -121,7 +121,7 @@ spec:
         kind: Application
       project: my-project
       source:
-        targetRevision: '{{ srcTargetRevision }}'
+        targetRevision: '{{ targetRevision }}'
         path: '{{ srcPath }}'
         repoURL: '{{ srcRepoURL }}'
       syncPolicy:
