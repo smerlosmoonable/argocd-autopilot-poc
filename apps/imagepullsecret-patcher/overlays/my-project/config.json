@@ -1,7 +1,7 @@
 {
     "appName": "imagepullsecret-patcher",
     "userGivenName": "imagepullsecret-patcher",
-    "destNamespace": "default",
+    "destNamespace": "imagepullsecret-patcher",
     "destServer": "https://kubernetes.default.svc",
     "srcPath": "apps/imagepullsecret-patcher/overlays/my-project",
     "srcRepoURL": "https://github.com/smerlosmoonable/argocd-autopilot-poc.git",
