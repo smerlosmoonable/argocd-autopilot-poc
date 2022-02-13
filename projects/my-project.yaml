@@ -90,7 +90,7 @@ spec:
         - path: apps/**/my-project/config_values.yaml
       repoURL: https://github.com/smerlosmoonable/argocd-autopilot-poc.git
       requeueAfterSeconds: 20
-      revision: ""
+      revision: "" 
       template:
         metadata: 
           name: my-project-{{userGivenName}}
@@ -121,7 +121,7 @@ spec:
         kind: Application
       project: my-project
       source:
-        targetRevision: '{{ targetRevision }}'
+        targetRevision: '{{ srcTargetRevision }}'
         path: '{{ srcPath }}'
         repoURL: '{{ srcRepoURL }}'
       syncPolicy:
