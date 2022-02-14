@@ -1,5 +1,5 @@
-appName: echo-test-2
-userGivenName: echo-test-2
+appName: echo-test-2-chete
+userGivenName: echo-test-2-chete
 destNamespace: smerlos
 destServer: https://kubernetes.default.svc
 srcPath: internals/cicd/helm/echo-test-2
